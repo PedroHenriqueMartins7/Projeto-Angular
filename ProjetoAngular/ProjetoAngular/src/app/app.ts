@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,10 @@ import { Component, signal } from '@angular/core';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('ProjetoAngular');
+  protected readonly title = signal('ProjetoAngular'); 
+
+  @ Input ()
+  topo = "loja 2"
+
+  loja = "loja angular pai";
 }
